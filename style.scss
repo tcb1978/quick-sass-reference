@@ -1,0 +1,62 @@
+
+$blue:#9fbfbf;
+$margin: 5%;
+$cream:#f2efeb;
+$pink:pink;
+
+@mixin border-radius($radius: 20px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+body{
+  background: #262626;
+  font-family: helvetica, Arial, Helvetica, sans-serif;
+}
+
+header {
+  margin: 20px 0 0 $margin;
+  h1 {
+    color: $blue;
+    text-align: center;
+  }
+
+  h2 {
+    color: $blue;
+    margin: 10px 10%;
+  }
+}
+
+p {
+  margin: 20px $margin;
+}
+
+a {
+  color: $blue;
+}
+
+.grad {
+  @include border-radius;
+  padding: 1%;
+  background-color: $cream;
+  background-image: -webkit-gradient(linear, left top, left bottom, from($cream), to($pink));
+  background-image: -webkit-linear-gradient(top, $cream, $pink);
+  background-image: -moz-linear-gradient(top, $cream, $pink);
+  background-image: -ms-linear-gradient(top, $cream, $pink);
+  background-image: -o-linear-gradient(top, $cream, $pink);
+
+  .intro {
+    @include border-radius;
+    background: #333;
+      .par1 {
+        color: $blue;
+        a {
+          font-size: 20px;
+          &:hover {
+            background: $cream;
+          }
+        }
+      }
+  }
+}

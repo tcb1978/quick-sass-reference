@@ -1,0 +1,54 @@
+body {
+  background: #262626;
+  font-family: helvetica, Arial, Helvetica, sans-serif;
+}
+
+header {
+  margin: 20px 0 0 5%;
+}
+header h1 {
+  color: #9fbfbf;
+  text-align: center;
+}
+header h2 {
+  color: #9fbfbf;
+  margin: 10px 10%;
+}
+
+p {
+  margin: 20px 5%;
+}
+
+a {
+  color: #9fbfbf;
+}
+
+.grad {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  padding: 1%;
+  background-color: #f2efeb;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f2efeb), to(pink));
+  background-image: -webkit-linear-gradient(top, #f2efeb, pink);
+  background-image: -moz-linear-gradient(top, #f2efeb, pink);
+  background-image: -ms-linear-gradient(top, #f2efeb, pink);
+  background-image: -o-linear-gradient(top, #f2efeb, pink);
+}
+.grad .intro {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: #333;
+}
+.grad .intro .par1 {
+  color: #9fbfbf;
+}
+.grad .intro .par1 a {
+  font-size: 20px;
+}
+.grad .intro .par1 a:hover {
+  background: #f2efeb;
+}
+
+/*# sourceMappingURL=style.css.map */
